@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "200d3ca6-0e1b-46b3-ab91-86d48afa7193",
+		"name": "REST API Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28664964"
+	},
+	"item": [
+		{
+			"name": "Add a User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userID\": 0,\r\n  \"userEmail\": \"theuser@outlook.com\",\r\n  \"userPassword\": \"password\",\r\n  \"createdDate\": \"2023-09-14T02:38:54.395Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5269/api/Rest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5269",
+					"path": [
+						"api",
+						"Rest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update a User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"userID\": 102,\r\n        \"userEmail\": \"imrochester@outlook.com\",\r\n        \"userPassword\": \"nycisawesome987_\",\r\n        \"createdDate\": \"2023-09-14T03:36:12.7116407Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5269/api/Rest/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5269",
+					"path": [
+						"api",
+						"Rest",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Single User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5269/api/Rest/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5269",
+					"path": [
+						"api",
+						"Rest",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

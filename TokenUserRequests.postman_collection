@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "36144a49-0acd-4434-b66a-50c52568ead1",
+		"name": "Token User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28664964"
+	},
+	"item": [
+		{
+			"name": "Return an Encrypted Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5269/api/Token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5269",
+					"path": [
+						"api",
+						"Token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
